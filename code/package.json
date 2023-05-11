@@ -11,8 +11,7 @@
 		"typescript": "^5.0.4"
 	},
 	"dependencies": {
-		"quickentity-script": "^1.2.1",
-		"repository-script": "^1.0.2"
+		"quickentity-script": "^1.2.1"
 	},
 	"scripts": {
 		"build:watch": "tsc -w",
