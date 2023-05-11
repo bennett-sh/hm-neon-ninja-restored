@@ -1,9 +1,31 @@
 {
 	"$schema": "https://raw.githubusercontent.com/bennett-sh/schemas/main/hm/smf-mod.v2.schema.json",
 	"version": "0.1.0",
-	"id": "BSh.AnIDForTheMod",
-	"name": "Incredible Mod",
-	"description": "A truly amazing mod",
+	"id": "BSh.NeonNinjaRestored",
+	"name": "Neon Ninja Restored",
+	"description": "Restores the classic overexposured neon ninja suit",
 	"authors": ["BSh"],
-	"frameworkVersion": "2.22.1"
+	"frameworkVersion": "2.22.1",
+	"options": [
+		{
+			"name": "Unplayable",
+			"group": "Brightness",
+			"contentFolders": ["unplayable"],
+			"image": "./assets/unplayable.png",
+			"type": "select"
+		},
+		{
+			"name": "Default (pre-patch)",
+			"enabledByDefault": true,
+			"group": "Brightness",
+			"contentFolders": ["content"],
+			"image": "./assets/header.png",
+			"type": "select"
+		},
+		{
+			"name": "Default (post-patch)",
+			"group": "Brightness",
+			"type": "select"
+		}
+	]
 }

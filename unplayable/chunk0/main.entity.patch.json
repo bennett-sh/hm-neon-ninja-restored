@@ -1,0 +1,19 @@
+{
+  "tempHash": "0030873AC710F7CB",
+  "tbluHash": "0092EFBEDD9F3294",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "59e0361e55d60c9a",
+        {
+          "SetPropertyValue": {
+            "property_name": "ConstantVector1D_07_Value",
+            "value": 1000
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6,
+  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json"
+}
