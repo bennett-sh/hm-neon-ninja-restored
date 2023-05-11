@@ -1,11 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/bennett-sh/schemas/main/hm/smf-mod.v2.schema.json",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"id": "BSh.NeonNinjaRestored",
 	"name": "Neon Ninja Restored",
 	"description": "Restores the classic overexposured neon ninja suit",
 	"authors": ["BSh"],
-	"frameworkVersion": "2.22.1",
+	"frameworkVersion": "2.24.6",
 	"options": [
 		{
 			"name": "Unplayable",
@@ -27,5 +27,6 @@
 			"group": "Brightness",
 			"type": "select"
 		}
-	]
+	],
+	"updateCheck": "https://github.com/bennett-sh/hm-neon-ninja-restored/releases/latest/download/updates.json"
 }

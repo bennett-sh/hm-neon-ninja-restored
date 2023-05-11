@@ -1,24 +1,24 @@
 {
-  "name": "smf-mod",
-  "private": true,
-  "type": "module",
-  "version": "1.0.0",
-  "main": "dist/main.js",
-  "devDependencies": {
-    "@types/node": "^18.16.5",
-    "concurrently": "^8.0.1",
-    "nodemon": "^2.0.22",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "quickentity-script": "^1.2.1",
-    "repository-script": "^1.0.2"
-  },
-  "scripts": {
-    "build:watch": "tsc -w",
-    "start:watch": "nodemon .",
-    "start": "node .",
-    "build": "tsc",
-    "dev": "concurrently npm:build:watch npm:start:watch"
-  }
+	"name": "smf-mod",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"main": "dist/main.js",
+	"devDependencies": {
+		"@types/node": "^18.16.5",
+		"concurrently": "^8.0.1",
+		"nodemon": "^2.0.22",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"quickentity-script": "^1.2.1",
+		"repository-script": "^1.0.2"
+	},
+	"scripts": {
+		"build:watch": "tsc -w",
+		"start:watch": "nodemon .",
+		"start": "node .",
+		"build": "tsc",
+		"dev": "concurrently npm:build:watch npm:start:watch"
+	}
 }
