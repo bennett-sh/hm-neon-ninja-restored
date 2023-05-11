@@ -137,7 +137,7 @@ jobs:
               if: ${{ steps.newVersion.outputs.new-release-version }}
               uses: TheDoctor0/zip-release@4fb9e4ff72847dd3d1c111cf63834e353ed7cb3d
               with:
-                  filename: mod.framework.zip
+                  filename: neon-ninja-restored.framework.zip
                   path: ${{ steps.modID.outputs.prop }}
 
             - name: Create updates.json
@@ -145,7 +145,7 @@ jobs:
               env:
                   VERSION: ${{ toJSON(steps.newVersion.outputs.new-release-version) }}
                   CHANGELOG: ${{ toJSON(steps.changelog.outputs.changes) }}
-                  URL: ${{ format('https://github.com/{0}/releases/latest/download/mod.framework.zip', github.repository) }}
+                  URL: ${{ format('https://github.com/{0}/releases/latest/download/neon-ninja-restored.framework.zip', github.repository) }}
               run: |
                   echo "{\"version\":$VERSION,\"changelog\":$CHANGELOG,\"url\":\"$URL\"}" > updates.json
 
@@ -158,5 +158,5 @@ jobs:
                   tag_name: ${{ steps.newVersion.outputs.new-release-version }}
                   repository: ${{ github.repository }}
                   files: |
-                      mod.framework.zip
+                      neon-ninja-restored.framework.zip
                       updates.json
