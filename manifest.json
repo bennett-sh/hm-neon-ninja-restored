@@ -1,0 +1,9 @@
+{
+	"$schema": "https://raw.githubusercontent.com/bennett-sh/schemas/main/hm/smf-mod.v2.schema.json",
+	"version": "0.1.0",
+	"id": "BSh.AnIDForTheMod",
+	"name": "Incredible Mod",
+	"description": "A truly amazing mod",
+	"authors": ["BSh"],
+	"frameworkVersion": "2.22.1"
+}
